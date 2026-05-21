@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags:
+  - Enemy
+  - Tower
+  - Ground
+  - Path
+  - EndPoint
+  - Undefined
+  - Defender
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Tower
+  - Water
+  - UI
+  - Enemy
+  - Ground
+  - Path
+  - Bullet
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1381938253
+    locked: 0
+  - name: Foreground
+    uniqueID: 1997692075
+    locked: 0
+  - name: Path
+    uniqueID: 3429157595
+    locked: 0
+  - name: Enemy
+    uniqueID: 1827733099
+    locked: 0
+  - name: Tower
+    uniqueID: 1595823505
+    locked: 0
+  - name: Bullet
+    uniqueID: 3486575155
+    locked: 0
+  - name: UI
+    uniqueID: 850399469
+    locked: 0
+  m_RenderingLayers:
+  - Default

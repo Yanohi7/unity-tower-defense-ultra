@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe97f47b75cce24bbbc9f4c918deee8, type: 3}
+  m_Name: GhostData
+  m_EditorClassIdentifier: 
+  enemyName: Ghost
+  prefab: {fileID: 218122028915123784, guid: 2e3b0123074c0434fbeba12c74a9b647, type: 3}
+  maxHP: 50
+  speed: 1
+  goldReward: 8
+  attackPointCost: 8
+  immuneToSlow: 1
+  immuneToLaser: 1
+  immuneToDefenders: 1
+  deathSound: {fileID: 8300000, guid: 0075ce4c816456a4ea954ec43db49f4a, type: 3}
+  defenderHitSounds: []
+  idleSounds:
+  - {fileID: 8300000, guid: d576aaff27549cc4ea70816eb6ee0bd1, type: 3}
+  - {fileID: 8300000, guid: bda8cf45614237942ba07ebbf4e837c5, type: 3}
+  - {fileID: 8300000, guid: ac7a230dcb2f6814f965258e8eb526b3, type: 3}
+  - {fileID: 8300000, guid: f13bd01fb1c193347bed0c469ab42a87, type: 3}

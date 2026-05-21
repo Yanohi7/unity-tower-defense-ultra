@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa557b849feff024296585925860f305, type: 3}
+  m_Name: ArcherTowerData
+  m_EditorClassIdentifier: 
+  towerName: ArcherTower
+  towerPrefab: {fileID: 8407065158142886852, guid: 383aa9ccbedd67447a0a2e35dab012c0, type: 3}
+  cost: 70
+  damage: 8
+  range: 3.6
+  fireRate: 1.1
+  targetMode: 1
+  lockFirstTarget: 1
+  attackType: 0
+  projectilePrefab: {fileID: 8699957989737546470, guid: 40865997029f04e419374d5d37cfea71, type: 3}
+  ghostDamageMultiplier: 0
+  laserDamagePerSecond: 0
+  laserHitEffectPrefab: {fileID: 0}
+  ignoreLaserImmuneEnemies: 0
+  appliesSlow: 0
+  slowPercent: 0
+  slowDuration: 0
+  shootSound: {fileID: 8300000, guid: 79136c6fef8d0f74c86144333c9da10b, type: 3}
+  hitSound: {fileID: 8300000, guid: 668442093cd8ea24e8c5135e26629a91, type: 3}
+  laserStartSound: {fileID: 0}
+  laserLoopSound: {fileID: 0}
+  laserEndSound: {fileID: 0}
+  hitEffectPrefab: {fileID: 4680076787276327037, guid: b24bbc6a4a5d2b643ba28917f9f4e465, type: 3}

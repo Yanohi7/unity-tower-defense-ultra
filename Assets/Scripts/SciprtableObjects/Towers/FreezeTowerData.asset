@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa557b849feff024296585925860f305, type: 3}
+  m_Name: FreezeTowerData
+  m_EditorClassIdentifier: 
+  towerName: FreezeTower
+  towerPrefab: {fileID: 8407065158142886852, guid: d688ef01fb69ed842af2b20df82c97ab, type: 3}
+  cost: 100
+  damage: 1
+  range: 3.5
+  fireRate: 1
+  targetMode: 0
+  lockFirstTarget: 1
+  attackType: 1
+  projectilePrefab: {fileID: 0}
+  ghostDamageMultiplier: 0
+  laserDamagePerSecond: 7
+  laserHitEffectPrefab: {fileID: 4680076787276327037, guid: 537db505154945a4684231ac46cc8c1c, type: 3}
+  ignoreLaserImmuneEnemies: 0
+  appliesSlow: 1
+  slowPercent: 0.5
+  slowDuration: 0.5
+  shootSound: {fileID: 0}
+  hitSound: {fileID: 0}
+  laserStartSound: {fileID: 8300000, guid: 747de1828f118824cbdd1fd406b0e2cc, type: 3}
+  laserLoopSound: {fileID: 8300000, guid: 8af5ce63021e4e7409a979f5dc9d6b57, type: 3}
+  laserEndSound: {fileID: 8300000, guid: 464d4014c6729704b90aab64adbfedea, type: 3}
+  hitEffectPrefab: {fileID: 0}

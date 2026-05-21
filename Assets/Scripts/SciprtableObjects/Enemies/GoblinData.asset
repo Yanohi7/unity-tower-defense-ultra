@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe97f47b75cce24bbbc9f4c918deee8, type: 3}
+  m_Name: GoblinData
+  m_EditorClassIdentifier: 
+  enemyName: Goblin
+  prefab: {fileID: 8734540272497149660, guid: d890a4712c5e9a8438ab24624a50f187, type: 3}
+  maxHP: 25
+  speed: 1.1
+  goldReward: 4
+  attackPointCost: 3
+  immuneToSlow: 0
+  immuneToLaser: 0
+  immuneToDefenders: 0
+  deathSound: {fileID: 8300000, guid: eb037b968c5758e42aea321d045d3c5a, type: 3}
+  defenderHitSounds:
+  - {fileID: 8300000, guid: 6c6b86d8c1e7f2c409f73184d0d6a163, type: 3}
+  idleSounds:
+  - {fileID: 8300000, guid: f26f99c97f1c9c34abf54c51f4a8e0ef, type: 3}
+  - {fileID: 8300000, guid: 77ccdf5094b8ec94bbe05c732e1f46ad, type: 3}
+  - {fileID: 8300000, guid: 9a0c737124f57b546af668517eaa6f49, type: 3}
+  - {fileID: 8300000, guid: 7b86e75b1ac96004b931a5cf0142d0b3, type: 3}
