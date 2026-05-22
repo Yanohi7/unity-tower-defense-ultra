@@ -206,17 +206,15 @@ public class HotSeatAttackBuilder : MonoBehaviour
         if (towerButtons == null)
             return;
 
-        if (gameManager == null || gameManager.CanBuild)
-            return;
-
         bool canEdit = CanEditWave();
+        bool canBuild = gameManager != null && gameManager.CanBuild;
 
         for (int i = 0; i < towerButtons.Length; i++)
         {
             if (towerButtons[i] == null)
                 continue;
 
-            towerButtons[i].SetActive(canEdit);
+            towerButtons[i].SetActive(canEdit && canBuild);
         }
     }
 

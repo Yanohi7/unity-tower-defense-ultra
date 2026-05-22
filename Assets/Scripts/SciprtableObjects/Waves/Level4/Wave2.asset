@@ -22,11 +22,11 @@ MonoBehaviour:
   - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
     spawnDelayAfter: 1
   - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
-    spawnDelayAfter: 1
+    spawnDelayAfter: 2
   - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
     spawnDelayAfter: 1
   - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
-    spawnDelayAfter: 1
+    spawnDelayAfter: 2
   - enemyPrefab: {fileID: 218122028915123784, guid: 2e3b0123074c0434fbeba12c74a9b647, type: 3}
     spawnDelayAfter: 0.5
   - enemyPrefab: {fileID: 8734540272497149660, guid: d890a4712c5e9a8438ab24624a50f187, type: 3}

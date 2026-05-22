@@ -16,8 +16,8 @@ MonoBehaviour:
   prefab: {fileID: 218122028915123784, guid: 2e3b0123074c0434fbeba12c74a9b647, type: 3}
   maxHP: 50
   speed: 1
-  goldReward: 8
-  attackPointCost: 8
+  goldReward: 11
+  attackPointCost: 7
   immuneToSlow: 1
   immuneToLaser: 1
   immuneToDefenders: 1

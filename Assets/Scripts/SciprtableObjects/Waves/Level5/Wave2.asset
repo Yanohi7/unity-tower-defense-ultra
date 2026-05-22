@@ -37,5 +37,101 @@ MonoBehaviour:
     spawnDelayAfter: 2
   - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
     spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
   hpMultiplier: 1
   goldMultiplier: 1

@@ -15,12 +15,12 @@ MonoBehaviour:
   enemyQueue:
   - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
     spawnDelayAfter: 1
+  - enemyPrefab: {fileID: 8734540272497149660, guid: d890a4712c5e9a8438ab24624a50f187, type: 3}
+    spawnDelayAfter: 1
   - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
     spawnDelayAfter: 2
   - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
-    spawnDelayAfter: 2
-  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
-    spawnDelayAfter: 2
+    spawnDelayAfter: 1
   - enemyPrefab: {fileID: 8734540272497149660, guid: d890a4712c5e9a8438ab24624a50f187, type: 3}
     spawnDelayAfter: 2
   - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
@@ -33,5 +33,35 @@ MonoBehaviour:
     spawnDelayAfter: 1
   - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
     spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 8734540272497149660, guid: d890a4712c5e9a8438ab24624a50f187, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 1
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 1
+  - enemyPrefab: {fileID: 8734540272497149660, guid: d890a4712c5e9a8438ab24624a50f187, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 1
+  - enemyPrefab: {fileID: 8734540272497149660, guid: d890a4712c5e9a8438ab24624a50f187, type: 3}
+    spawnDelayAfter: 1
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 1
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 1
+  - enemyPrefab: {fileID: 8734540272497149660, guid: d890a4712c5e9a8438ab24624a50f187, type: 3}
+    spawnDelayAfter: 2
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 1
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 1
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 1
+  - enemyPrefab: {fileID: 218122028915123784, guid: 686d921b0c4bb4948b8588848a00715c, type: 3}
+    spawnDelayAfter: 1
   hpMultiplier: 1.1
   goldMultiplier: 1.1

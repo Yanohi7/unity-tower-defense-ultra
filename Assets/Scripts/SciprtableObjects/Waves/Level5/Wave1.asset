@@ -123,5 +123,55 @@ MonoBehaviour:
     spawnDelayAfter: 0.7
   - enemyPrefab: {fileID: 8734540272497149660, guid: d890a4712c5e9a8438ab24624a50f187, type: 3}
     spawnDelayAfter: 0.7
+  - enemyPrefab: {fileID: 8734540272497149660, guid: d890a4712c5e9a8438ab24624a50f187, type: 3}
+    spawnDelayAfter: 0.7
+  - enemyPrefab: {fileID: 8734540272497149660, guid: d890a4712c5e9a8438ab24624a50f187, type: 3}
+    spawnDelayAfter: 0.7
+  - enemyPrefab: {fileID: 8734540272497149660, guid: d890a4712c5e9a8438ab24624a50f187, type: 3}
+    spawnDelayAfter: 0.7
+  - enemyPrefab: {fileID: 8734540272497149660, guid: d890a4712c5e9a8438ab24624a50f187, type: 3}
+    spawnDelayAfter: 0.7
+  - enemyPrefab: {fileID: 8734540272497149660, guid: d890a4712c5e9a8438ab24624a50f187, type: 3}
+    spawnDelayAfter: 0.7
+  - enemyPrefab: {fileID: 8734540272497149660, guid: d890a4712c5e9a8438ab24624a50f187, type: 3}
+    spawnDelayAfter: 0.7
+  - enemyPrefab: {fileID: 8734540272497149660, guid: d890a4712c5e9a8438ab24624a50f187, type: 3}
+    spawnDelayAfter: 0.7
+  - enemyPrefab: {fileID: 8734540272497149660, guid: d890a4712c5e9a8438ab24624a50f187, type: 3}
+    spawnDelayAfter: 0.7
+  - enemyPrefab: {fileID: 8734540272497149660, guid: d890a4712c5e9a8438ab24624a50f187, type: 3}
+    spawnDelayAfter: 0.7
+  - enemyPrefab: {fileID: 8734540272497149660, guid: d890a4712c5e9a8438ab24624a50f187, type: 3}
+    spawnDelayAfter: 0.7
+  - enemyPrefab: {fileID: 8734540272497149660, guid: d890a4712c5e9a8438ab24624a50f187, type: 3}
+    spawnDelayAfter: 0.7
+  - enemyPrefab: {fileID: 8734540272497149660, guid: d890a4712c5e9a8438ab24624a50f187, type: 3}
+    spawnDelayAfter: 0.7
+  - enemyPrefab: {fileID: 8734540272497149660, guid: d890a4712c5e9a8438ab24624a50f187, type: 3}
+    spawnDelayAfter: 0.7
+  - enemyPrefab: {fileID: 8734540272497149660, guid: d890a4712c5e9a8438ab24624a50f187, type: 3}
+    spawnDelayAfter: 0.7
+  - enemyPrefab: {fileID: 8734540272497149660, guid: d890a4712c5e9a8438ab24624a50f187, type: 3}
+    spawnDelayAfter: 0.7
+  - enemyPrefab: {fileID: 8734540272497149660, guid: d890a4712c5e9a8438ab24624a50f187, type: 3}
+    spawnDelayAfter: 0.7
+  - enemyPrefab: {fileID: 8734540272497149660, guid: d890a4712c5e9a8438ab24624a50f187, type: 3}
+    spawnDelayAfter: 0.7
+  - enemyPrefab: {fileID: 8734540272497149660, guid: d890a4712c5e9a8438ab24624a50f187, type: 3}
+    spawnDelayAfter: 0.7
+  - enemyPrefab: {fileID: 8734540272497149660, guid: d890a4712c5e9a8438ab24624a50f187, type: 3}
+    spawnDelayAfter: 0.7
+  - enemyPrefab: {fileID: 8734540272497149660, guid: d890a4712c5e9a8438ab24624a50f187, type: 3}
+    spawnDelayAfter: 0.7
+  - enemyPrefab: {fileID: 8734540272497149660, guid: d890a4712c5e9a8438ab24624a50f187, type: 3}
+    spawnDelayAfter: 0.7
+  - enemyPrefab: {fileID: 8734540272497149660, guid: d890a4712c5e9a8438ab24624a50f187, type: 3}
+    spawnDelayAfter: 0.7
+  - enemyPrefab: {fileID: 8734540272497149660, guid: d890a4712c5e9a8438ab24624a50f187, type: 3}
+    spawnDelayAfter: 0.7
+  - enemyPrefab: {fileID: 8734540272497149660, guid: d890a4712c5e9a8438ab24624a50f187, type: 3}
+    spawnDelayAfter: 0.7
+  - enemyPrefab: {fileID: 8734540272497149660, guid: d890a4712c5e9a8438ab24624a50f187, type: 3}
+    spawnDelayAfter: 0.7
   hpMultiplier: 1
   goldMultiplier: 1

@@ -114,9 +114,17 @@ public class ItemPreview : MonoBehaviour
             SetPreviewColor(new Color(1f, 0f, 0f, 0.5f));
             previewItem.transform.position = mousePosition;
 
-            // If we are still over a tile, keep the preview flipped correctly
+            // Flip preview only if this tile type matches the selected item type.
+            // This prevents defender preview from flipping on tower tiles.
             if (currentBuildTile != null)
-                ApplyPreviewFlip();
+            {
+                bool tileMatchesSelectedItem =
+                    (isDefender && currentBuildTile.isRoadTile) ||
+                    (!isDefender && !currentBuildTile.isRoadTile);
+
+                if (tileMatchesSelectedItem)
+                    ApplyPreviewFlip();
+            }
 
             HideRange();
         }
@@ -148,28 +156,26 @@ public class ItemPreview : MonoBehaviour
         return false;
     }
 
-    // Method to flip the preview depending on tile side
+    // Method to flip the preview depending on tile side and selected item type
     private void ApplyPreviewFlip()
     {
-        if (previewItem == null || currentBuildTile == null)
+        if (previewItem == null || currentBuildTile == null || itemShop == null)
+            return;
+
+        bool isDefender = itemShop.SelectedIsDefender;
+
+        if (isDefender && !currentBuildTile.isRoadTile)
+            return;
+
+        if (!isDefender && currentBuildTile.isRoadTile)
             return;
 
         Vector3 newScale = previewItem.transform.localScale;
 
-        bool isDefender = itemShop.SelectedIsDefender;
-
         if (currentBuildTile.isLeftTile)
-        {
-            if (isDefender && !currentBuildTile.isRoadTile)
-                return;
             newScale.x = -Mathf.Abs(newScale.x);
-        }
         else
-        {
-            if (isDefender && !currentBuildTile.isRoadTile)
-                return;
             newScale.x = Mathf.Abs(newScale.x);
-        }
 
         previewItem.transform.localScale = newScale;
     }

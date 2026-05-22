@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e0c74793e0c9d764c920e017c84dbc60
+guid: a0d071859f98bc541ad38f33f6212afc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7659403057833736227
-    second: tower_05_0
+      213: -4937986365806398841
+    second: tower_cannon_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,10 +46,10 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
-  spriteExtrude: 1
+  spriteMode: 2
+  spriteExtrude: 0
   spriteMeshType: 0
-  alignment: 7
+  alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tower_05_0
+      name: tower_cannon_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 25
         y: 0
-        width: 90
-        height: 75
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 78
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dd7874a008554b590800000000000000
-      internalID: -7659403057833736227
+      spriteID: 7823368109fb87bb0800000000000000
+      internalID: -4937986365806398841
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: a8467d507376d0647a1b81561d0160f1
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      tower_05_0: -7659403057833736227
+      tower_cannon_0: -4937986365806398841
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
