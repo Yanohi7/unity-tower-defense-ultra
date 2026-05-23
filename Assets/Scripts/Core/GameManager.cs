@@ -1,6 +1,4 @@
-using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -26,11 +24,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int maxLives = 10;
     [SerializeField] public int lives;
 
-    [Header("UI")]
-    [SerializeField] private TextMeshProUGUI goldText;
-    [SerializeField] private TextMeshProUGUI livesText;
-    [SerializeField] private TextMeshProUGUI waveText;
-
     [Header("Round State Machine")]
     [SerializeField] private float preparationDuration = 30f;
     [SerializeField] private float roundEndDuration = 2f;
@@ -48,10 +41,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] private AudioClip waveStartSound;
     [SerializeField] private AudioClip gameStartSound;
     [SerializeField] private AudioClip loseBaseHPSound;
-
-    [Header("Screens")]
-    [SerializeField] private GameObject gameOverScreen;
-    [SerializeField] private GameObject winScreen;
 
     private Spawner[] spawners;
 
@@ -107,18 +96,6 @@ public class GameManager : MonoBehaviour
         CurrentGold = startGold;
         lives = maxLives;
         aliveEnemies = 0;
-
-        // Update all UI at the start of the game.
-        UpdateGoldUI();
-        UpdateLivesUI();
-        UpdateWaveUI();
-
-        // Hide end screens at the start.
-        if (gameOverScreen != null)
-            gameOverScreen.SetActive(false);
-
-        if (winScreen != null)
-            winScreen.SetActive(false);
 
         // Start with preparation instead of instantly spawning enemies.
         StartPreparation();
@@ -177,8 +154,6 @@ public class GameManager : MonoBehaviour
 
         // Player can always build during preparation.
         CanBuild = true;
-
-        UpdateWaveUI();
     }
 
     // Method to update preparation timer.
@@ -210,14 +185,6 @@ public class GameManager : MonoBehaviour
             AudioManager.Instance.PlayClick();
 
         StartBattle();
-    }
-
-    public void BackToMenu()
-    {
-        if (AudioManager.Instance != null)
-            AudioManager.Instance.PlayClick();
-
-        SceneManager.LoadScene("MainMenu");
     }
 
     // Method to start battle stage and spawn the next wave on all available spawners.
@@ -253,8 +220,6 @@ public class GameManager : MonoBehaviour
         // Building during battle depends on the selected rule.
         CanBuild = allowBuildingDuringBattle;
 
-        UpdateWaveUI();
-
         // Play wave start sound.
         if (audioSource != null && waveStartSound != null)
             audioSource.PlayOneShot(waveStartSound);
@@ -282,8 +247,6 @@ public class GameManager : MonoBehaviour
 
         // Building is disabled during this short transition stage.
         CanBuild = false;
-
-        UpdateWaveUI();
     }
 
     // Method to update round end timer and decide what happens next.
@@ -405,7 +368,6 @@ public class GameManager : MonoBehaviour
     public void AddGold(int amount)
     {
         CurrentGold += amount;
-        UpdateGoldUI();
     }
 
     // Method to spend gold if the player has enough.
@@ -414,7 +376,6 @@ public class GameManager : MonoBehaviour
         if (CurrentGold >= amount)
         {
             CurrentGold -= amount;
-            UpdateGoldUI();
             return true;
         }
 
@@ -430,7 +391,6 @@ public class GameManager : MonoBehaviour
         if (lives > 0)
         {
             lives--;
-            UpdateLivesUI();
 
             if (audioSource != null && loseBaseHPSound != null)
                 audioSource.PlayOneShot(loseBaseHPSound);
@@ -442,25 +402,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // Method to update gold UI text.
-    private void UpdateGoldUI()
+    public int GetCurrentWaveNumber()
     {
-        if (goldText != null)
-            goldText.text = CurrentGold.ToString();
-    }
-
-    // Method to update lives UI text.
-    private void UpdateLivesUI()
-    {
-        if (livesText != null)
-            livesText.text = lives.ToString();
-    }
-
-    // Method to update wave UI text.
-    private void UpdateWaveUI()
-    {
-        if (waveText == null || spawners == null || spawners.Length == 0)
-            return;
+        if (spawners == null || spawners.Length == 0)
+            return 0;
 
         int highestWave = 0;
 
@@ -470,12 +415,10 @@ public class GameManager : MonoBehaviour
                 highestWave = spawner.CurrentWaveNumber;
         }
 
-        // +1 during preparation makes UI show the wave being prepared.
-        // During battle and round end, CurrentWaveNumber represents the active or finished wave.
         if (currentState == GameState.Preparation)
-            waveText.text = "Wave " + (highestWave + 1);
-        else
-            waveText.text = "Wave " + highestWave;
+            return highestWave + 1;
+
+        return highestWave;
     }
 
     // Method to end the game with defeat.
@@ -492,9 +435,6 @@ public class GameManager : MonoBehaviour
 
         if (audioSource != null && gameOverSound != null)
             audioSource.PlayOneShot(gameOverSound);
-
-        if (gameOverScreen != null)
-            gameOverScreen.SetActive(true);
 
         // Pause the game after losing.
         Time.timeScale = 0f;
@@ -514,9 +454,6 @@ public class GameManager : MonoBehaviour
 
         if (audioSource != null && winSound != null)
             audioSource.PlayOneShot(winSound);
-
-        if (winScreen != null)
-            winScreen.SetActive(true);
 
         // Pause the game after winning.
         Time.timeScale = 0f;

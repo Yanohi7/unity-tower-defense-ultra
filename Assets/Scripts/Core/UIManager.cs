@@ -9,16 +9,25 @@ public class UIManager : MonoBehaviour
     // restarting or quitting the game.
 
     private GameManager gameManager;
-    private Spawner spawner;
+    private Spawner[] spawners;
 
     [Header("Main UI")]
     [SerializeField] private TextMeshProUGUI goldText;
     [SerializeField] private TextMeshProUGUI livesText;
+    [SerializeField] private TextMeshProUGUI waveText;
 
     [Header("State UI")]
     [SerializeField] private TextMeshProUGUI stageText;
     [SerializeField] private TextMeshProUGUI stateTimerText;
     [SerializeField] private GameObject skipPreparationButton;
+
+    [Header("Screens")]
+    [SerializeField] private GameObject gameOverScreen;
+    [SerializeField] private GameObject winScreen;
+
+    [Header("Next Level")]
+    [SerializeField] private GameObject nextLevelButton;
+    [SerializeField] private int lastLevelBuildIndex = 5;
 
     [Header("Audio")]
     [SerializeField] private AudioClip buttonClickSound;
@@ -37,14 +46,14 @@ public class UIManager : MonoBehaviour
     private void Start()
     {
         gameManager = FindAnyObjectByType<GameManager>();
-        spawner = FindAnyObjectByType<Spawner>();
+        spawners = FindObjectsByType<Spawner>(FindObjectsSortMode.None);
 
         if (gameManager == null)
         {
             Debug.LogError($"UIManager on {gameObject.name}: GameManager was not found in scene {SceneManager.GetActiveScene().name}!");
         }
 
-        if (spawner == null)
+        if (spawners == null || spawners.Length == 0)
         {
             Debug.LogError($"UIManager on {gameObject.name}: Spawner was not found in scene {SceneManager.GetActiveScene().name}!");
         }
@@ -59,9 +68,20 @@ public class UIManager : MonoBehaviour
             Debug.LogError($"UIManager on {gameObject.name}: Lives Text is not assigned!");
         }
 
+        if (gameOverScreen != null)
+            gameOverScreen.SetActive(false);
+
+        if (winScreen != null)
+            winScreen.SetActive(false);
+
+        if (nextLevelButton != null)
+            nextLevelButton.SetActive(false);
+
         UpdateGoldUI();
         UpdateLivesUI();
+        UpdateWaveUI();
         UpdateStateUI();
+        UpdateEndScreensUI();
     }
 
     // Update is called once per frame
@@ -69,7 +89,10 @@ public class UIManager : MonoBehaviour
     {
         UpdateGoldUI();
         UpdateLivesUI();
+        UpdateWaveUI();
         UpdateStateUI();
+        UpdateEndScreensUI();
+
     }
 
     // Public method to update gold UI
@@ -90,13 +113,22 @@ public class UIManager : MonoBehaviour
         livesText.text = "Lives: " + gameManager.lives;
     }
 
+    // Public method to update wave UI
+    public void UpdateWaveUI()
+    {
+        if (gameManager == null || waveText == null)
+            return;
+
+        waveText.text = "Wave " + gameManager.GetCurrentWaveNumber();
+    }
+
     // Method to update preparation and round end UI
     private void UpdateStateUI()
     {
         if (gameManager == null)
             return;
 
-        bool isHotSeat = spawner != null && spawner.IsHotSeatMode();
+        bool isHotSeat = IsAnySpawnerHotSeat();
         bool showPreparation = gameManager.CurrentState == GameManager.GameState.Preparation;
         bool showRoundEnd = gameManager.CurrentState == GameManager.GameState.RoundEnd;
 
@@ -150,6 +182,46 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    // Method to update game over and victory screens
+    private void UpdateEndScreensUI()
+    {
+        if (gameManager == null)
+            return;
+
+        bool showGameOver = gameManager.CurrentState == GameManager.GameState.GameOver;
+        bool showVictory = gameManager.CurrentState == GameManager.GameState.Victory;
+
+        if (gameOverScreen != null)
+            gameOverScreen.SetActive(showGameOver);
+
+        if (winScreen != null)
+            winScreen.SetActive(showVictory);
+
+        if (nextLevelButton != null)
+            nextLevelButton.SetActive(showVictory && HasNextLevel());
+    }
+
+    // Method to check if at least one spawner uses HotSeat mode
+    private bool IsAnySpawnerHotSeat()
+    {
+        if (spawners == null || spawners.Length == 0)
+            return false;
+
+        foreach (Spawner spawner in spawners)
+        {
+            if (spawner != null && spawner.IsHotSeatMode())
+                return true;
+        }
+
+        return false;
+    }
+
+    // Method to check if the current scene has a next level
+    private bool HasNextLevel()
+    {
+        return SceneManager.GetActiveScene().buildIndex < lastLevelBuildIndex;
+    }
+
     // Method called by normal Skip Preparation button
     public void SkipPreparation()
     {
@@ -168,6 +240,29 @@ public class UIManager : MonoBehaviour
 
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void NextLevel()
+    {
+        PlayButtonSound();
+
+        Time.timeScale = 1f;
+
+        int currentIndex = SceneManager.GetActiveScene().buildIndex;
+        int nextIndex = currentIndex + 1;
+
+        if (nextIndex <= lastLevelBuildIndex)
+        {
+            SceneManager.LoadScene(nextIndex);
+        }
+    }
+
+    public void BackToMenu()
+    {
+        PlayButtonSound();
+
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MainMenu");
     }
 
     // Method to quit the game, called from a UI button

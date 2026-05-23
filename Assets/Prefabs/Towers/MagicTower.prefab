@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 4896159229791597573}
   - component: {fileID: -2525456427080065088}
   - component: {fileID: 2836221041571925112}
+  - component: {fileID: -4416521274628174910}
   m_Layer: 0
   m_Name: MagicTower
   m_TagString: Untagged
@@ -110,7 +111,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1595823505
   m_SortingLayer: 5
-  m_SortingOrder: 0
+  m_SortingOrder: -20
   m_Sprite: {fileID: 21300000, guid: b68029df2033cb84e9bf42386dda5fa0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -256,7 +257,7 @@ BoxCollider2D:
   m_Offset: {x: -0.055580795, y: 0.985739}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.49502864, y: 0.16}
+    pivot: {x: 0.49502864, y: 0.08}
     oldSize: {x: 2.7027028, y: 2.7027028}
     newSize: {x: 2.7777777, y: 2.7777777}
     adaptiveTilingThreshold: 0.5
@@ -283,3 +284,15 @@ MonoBehaviour:
   soundVolume: 0.7
   pitchRandomMin: 0.95
   pitchRandomMax: 1.05
+--- !u!114 &-4416521274628174910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8407065158142886852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69487ec0933546540bf574efe10a082e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

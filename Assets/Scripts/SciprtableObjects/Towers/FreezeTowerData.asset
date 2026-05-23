@@ -23,12 +23,12 @@ MonoBehaviour:
   attackType: 1
   projectilePrefab: {fileID: 0}
   ghostDamageMultiplier: 0
-  laserDamagePerSecond: 10
+  laserDamagePerSecond: 7
   laserHitEffectPrefab: {fileID: 4680076787276327037, guid: 537db505154945a4684231ac46cc8c1c, type: 3}
   ignoreLaserImmuneEnemies: 0
   appliesSlow: 1
   slowPercent: 0.6
-  slowDuration: 4
+  slowDuration: 3
   shootSound: {fileID: 0}
   hitSound: {fileID: 0}
   laserStartSound: {fileID: 8300000, guid: 747de1828f118824cbdd1fd406b0e2cc, type: 3}

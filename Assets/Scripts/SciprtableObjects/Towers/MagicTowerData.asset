@@ -15,8 +15,8 @@ MonoBehaviour:
   towerName: MagicTower
   towerPrefab: {fileID: 8407065158142886852, guid: a7d4bbb2d94be08469aa6aed4021878b, type: 3}
   cost: 150
-  damage: 8.5
-  range: 3
+  damage: 8
+  range: 2.8
   fireRate: 0.5
   targetMode: 1
   lockFirstTarget: 0

@@ -16,7 +16,7 @@ MonoBehaviour:
   towerPrefab: {fileID: 2851707546554948159, guid: cb01d06af992c2a40a426d3980376840, type: 3}
   cost: 120
   damage: 34
-  range: 5
+  range: 4
   fireRate: 0.4
   targetMode: 0
   lockFirstTarget: 0
@@ -30,7 +30,7 @@ MonoBehaviour:
   slowPercent: 0
   slowDuration: 0
   shootSound: {fileID: 8300000, guid: f19f6bdf606073949a525a98248b2e43, type: 3}
-  hitSound: {fileID: 8300000, guid: 186f8526b82e8554a879297e718139e2, type: 3}
+  hitSound: {fileID: 8300000, guid: f54a603a5f0a44545b2264200c7bf120, type: 3}
   laserStartSound: {fileID: 0}
   laserLoopSound: {fileID: 0}
   laserEndSound: {fileID: 0}
